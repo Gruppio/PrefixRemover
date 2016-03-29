@@ -23,7 +23,7 @@ do
 	fileWithoutPrefix=${f#$prefixToRemove}
 	newFileName="$prefixToAdd$fileWithoutPrefix"
 	echo "Renaming $f in $newFileName"
-	mv $f $newFileName
+	mv "$f" "$newFileName"
 done
 
 exit 0
